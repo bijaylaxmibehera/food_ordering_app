@@ -1,0 +1,25 @@
+.profile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.reviewer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+.reviewer img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+hr{
+    margin: 0.5rem;
+}
+.rating-btn{
+    background-color: green;
+    color: yellow;
+    padding: 4px 8px;
+    border-radius: 4px;
+}

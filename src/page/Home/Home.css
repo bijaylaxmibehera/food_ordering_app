@@ -1,0 +1,22 @@
+.app-heading-text,.cuisine-type{
+    text-align: center;
+}
+.menu-btn{
+    margin: 1rem;
+}
+.resturant-details{
+    width: 85vw;
+    margin: auto;
+}
+.restautant{
+    margin: 1.5rem;
+}
+.restaurant-name{
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+}
+.restaurant-name:hover{
+    color: rgb(228, 22, 228);
+    font-weight: 700;
+    font-size: 1.3rem;
+}

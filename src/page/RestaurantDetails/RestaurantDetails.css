@@ -1,0 +1,32 @@
+.details-page{
+    display: flex;
+    /* justify-content: space-around; */
+    gap: 10rem;
+    margin: 0 5rem;
+}
+.back-btn{
+    font-size: 1.3rem;
+    color: gray;
+    background: none;
+    margin: 1rem;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+}
+
+.info{
+    color: gray;
+    font-size: 1rem;
+}
+.average-rating{
+    margin-bottom: 1rem;
+}
+.add-rating-btn{
+    margin-top: 2rem;
+}
+.rating-container{
+    width: 55vw;
+    margin: auto;
+}
