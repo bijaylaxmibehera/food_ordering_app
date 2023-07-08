@@ -3,6 +3,7 @@
     /* justify-content: space-around; */
     gap: 10rem;
     margin: 0 5rem;
+    position: relative;
 }
 .back-btn{
     font-size: 1.3rem;
@@ -29,4 +30,10 @@ ul{
 .rating-container{
     width: 55vw;
     margin: auto;
+}
+.add-rating-container{
+    position: absolute;
+    z-index: 1;
+    top: 10vh;
+    left: 30vw;
 }

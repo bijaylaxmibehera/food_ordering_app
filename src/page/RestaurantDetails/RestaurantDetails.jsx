@@ -4,10 +4,11 @@ import { useContext } from "react";
 import { DataContext } from "../../";
 import { NavLink } from "react-router-dom";
 import { Rating } from "../../component/Rating/Rating";
+import { AddRating } from "../../component/AddRating/AddRating";
 
 export function RestaurantDetails() {
   const { id } = useParams();
-  const { restaurantDetails } = useContext(DataContext);
+  const { restaurantDetails,showModal,setShowModal } = useContext(DataContext);
 
   const restaurantSelected = restaurantDetails.find(
     (restaurant) => restaurant.id === Number(id)
@@ -16,6 +17,9 @@ export function RestaurantDetails() {
   const { name, address, phone, menu, ratings, averageRating } =
     restaurantSelected;
 
+  const openModalHandler=()=>{
+    setShowModal(true);
+  }
   return (
     <>
       <div className="details-page">
@@ -37,7 +41,7 @@ export function RestaurantDetails() {
           <p className="info average-rating">Average Rating: {averageRating}</p>
         </div>
         <div>
-          <button className="btn danger add-rating-btn">Add rating</button>
+          <button className="btn danger add-rating-btn" onClick={openModalHandler}>Add rating</button>
         </div>
       </div>
 
@@ -45,6 +49,10 @@ export function RestaurantDetails() {
         <hr />
         <Rating ratings={ratings} />
       </div>
+      <div className="add-rating-container">
+        <AddRating/>
+      </div>
+      {/* <AddRating/> */}
     </>
   );
 }

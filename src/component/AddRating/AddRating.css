@@ -1,0 +1,37 @@
+.add-rating-page{
+    background-color:rgb(216, 143, 168);
+    color: white;
+    width: 40vw;
+    margin: auto;
+    padding: 1.5rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+label{
+    display: flex;
+    gap: 2rem;
+    margin: 1rem;
+    font-size: 1.2rem;
+    justify-content: space-between;
+}
+.close-btn{
+    color: white;
+    border-radius: 50%;
+    font-size: 1rem;
+    background: transparent;
+    border: 2px solid white;
+    padding: 3px 6px;
+}
+.submit-btn-container{
+    display: flex;
+    justify-content: center;
+}
+.submit-review-btn{
+    color: black;
+}
+select{
+   cursor: pointer;
+}
